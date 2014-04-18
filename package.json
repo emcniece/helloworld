@@ -1,0 +1,31 @@
+{
+  "name": "helloworld",
+  "version": "0.0.0",
+  "description": "",
+  "main": "web.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/emcniece/helloworld.git"
+  },
+  "keywords": [
+    "hello",
+    "world",
+    "heroku"
+  ],
+  "author": "emcniece",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/emcniece/helloworld/issues"
+  },
+  "homepage": "https://github.com/emcniece/helloworld",
+  "dependencies": {
+    "logfmt": "~1.1.2",
+    "express": "~4.0.0"
+  },
+  "engines": {
+    "node": "0.10.x"
+  }
+}
