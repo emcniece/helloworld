@@ -18,7 +18,7 @@ module.exports = {
   =            Test Database Connection            =
   ================================================*/
 	getEvents: function(){
-    
+
     pool.getConnection(function(err, connection){
       connection.query( "select * from events",  function(err, rows){
         if(err) {
@@ -32,33 +32,7 @@ module.exports = {
     });
   } // getEvents
 
-  testCon: function(conn){
-    var output = '';
-	//conn.connect();
-
-	connection.query('SELECT 1 + 1 AS solution', function(err, rows, fields) {
-	  if (err) throw err;
-
-	  console.log('The solution is: ', rows[0].solution);
-	  output = rows;
-	});
-
-	//conn.end();
-
-	return output;
-    
-  },
-
-  /*========================================
-  =            Close Connection            =
-  ========================================*/ 
-  
-  close: function(){
-
-  	conn.close();
-    return true;
-  }
-
+ 
 
 
 }; // module.exports
