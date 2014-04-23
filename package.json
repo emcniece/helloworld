@@ -24,7 +24,9 @@
   "dependencies": {
     "logfmt": "~1.1.2",
     "express": "~4.0.0",
-    "mysql": "~2.1.1"
+    "mysql": "~2.1.1",
+    "jquery": "~2.1.0",
+    "cheerio": "~0.15.0"
   },
   "engines": {
     "node": "0.10.x"

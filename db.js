@@ -18,18 +18,22 @@ module.exports = {
   =            Test Database Connection            =
   ================================================*/
 	getEvents: function(){
+    var output = false;
 
     pool.getConnection(function(err, connection){
       connection.query( "select * from events",  function(err, rows){
         if(err) {
+          output = err;
           throw err;
         }else{
-          console.log( 'rows: ', rows );
+          output = rows;
         }
       });
       
       connection.release();
     });
+
+    return output;
   } // getEvents
 
  

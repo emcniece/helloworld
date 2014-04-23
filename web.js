@@ -31,10 +31,10 @@ app.use(logfmt.requestLogger());
 app.get('/', function(req, res) {
 	console.log('req: ', req.connection.remoteAddress);
 
-  //db.getEvents();
+  var rows = db.getEvents();
 
+	res.send('Hello World!'+rows);
 
-	res.send('Hello World!');
 	
 
 });
@@ -47,6 +47,4 @@ var port = Number(process.env.PORT || 5000);
 app.listen(port, function() {
   console.log("Listening on " + port);
 });
-
-
 
